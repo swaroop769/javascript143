@@ -68,11 +68,21 @@ const output = document.getElementById('output')
 const li = document.createElement('li')
 //li.className = 'taskItem';
 li.textContent = finalValue;
-li.addEventListener('click',function()
+//li.addEventListener('dblclick',function()
+//{
+  //output.removeChild(li);
+//});
+li.addEventListener('dblclick',function()
 {
-  output.removeChild(li);
+  li.style.height='130px';
+  li.style.width='360px';
+  li.style.borderRadius='10px';
+  li.style.textAlign='center';
+  li.style.backgroundColor='#1e293b';
+  li.style.padding='10px';
+  li.style.color='white';
+  
 });
-
 
 output.appendChild(li);
 
