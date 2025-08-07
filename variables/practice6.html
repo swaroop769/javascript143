@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .main{
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    padding: 10px;
+    margin: 100px auto;
+
+   
+
+    }
+   .child{
+     display: flex;
+     
+    justify-content:space-around;
+       align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+   }
+   button{
+   width: 50px;
+   }
+   #wwe{
+    width: 250px;
+   }
+   #output{
+        
+   }
+  </style>
+</head>
+<body>
+  <div class="main">
+  <h1>Todo</h1>
+  <div class="child">
+    
+  <input type="text" id="wwe" placeholder="Add a new task">
+  <button onclick="swaroop()">+</button>
+  </div>
+  <div class="child">
+ <p>All</p>
+ <p>Active</p>
+ <p>Completed</p>
+  </div>
+<p id="output"></p>
+  </div>
+  <script src="./practice6.js"></script>
+</body>
+</html>

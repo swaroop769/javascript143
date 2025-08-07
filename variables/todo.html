@@ -4,36 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .main{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      gap: 20px;
-      text-transform: capitalize;
-      
-    }
-    .child{
-      border: 1px solid black;
-      box-shadow: 5px 10px 15px blue;
-      transition: all 1s ease-in-out;
-    }
-    .child:hover{
-      box-shadow: 5px 10px 15px var(--primary-color);
-    }
-  </style>
+  <link rel="stylesheet" href="./todo.css" type="text/css">
 </head>
 <body>
-  <div class="main">
-  <h1>Todo</h1>
-  <input type="text" id="wwe">
-  <button onclick="todo()" id="addBtn">AddTask</button> 
-  <div class="child">
-  <div id="output"></div> 
+  <div class="container">
+  
+  <div class="todo-container">
+    <h1>Todo</h1>
+    <div class="add-task-container">
+      <input type="text" id="addText" placeholder="Add a new task">
+      <button onclick="addElement()" id="addBtn" title="Add Task">+</button> 
+    </div>
   </div>
+
+    <div class="filter">
+     
+      <button class="filter-btn">All</button>
+      <button class="filter-btn">Active</button>
+      <button class="filter-btn">Completed</button>
+    </div>
+    
+
+    
+    <ul class="todo-list" id="output">
+      <!--<li class="todo-item">
+        <input type="checkbox" id="todo" class="todo-checkbox">
+        <label for="todo" class="todo-text">JavaScript course</label>
+        <button class="delBtn" title="delete">x</button>
+      </li>-->
+    </ul>
+  
+  
+  
+
   </div>
   <script src="./todo.js"></script>
 </body>
 </html>
+
